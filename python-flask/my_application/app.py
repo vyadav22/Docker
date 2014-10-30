@@ -45,6 +45,6 @@ def euler2():
     total = t1 + t2
     t1 = t2
     term2 = total
-    if(total%2 = 0):
+    if total%2:
       sum = sum  +total
   return("Euler 2: The total is ",sum)
