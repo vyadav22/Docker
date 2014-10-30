@@ -14,3 +14,13 @@ def upload_file():
     return '',201
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
+
+#got the code from google 
+@app.route("/files")
+def list_files():
+  path = "./uploads/"
+  dirs = os.listdir(path)
+  files = ""
+   for file in dirs:
+    files = str(files + file + ", ")
+    return files
