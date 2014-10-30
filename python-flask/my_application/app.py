@@ -29,7 +29,7 @@ def list_files():
 @app.route("/euler1")
 def euler1():
   sum = 0
-  for i in range (1, 1000)
+  for i in range (1, 1000):
     if i%3 or i%5:
       sum = sum + i
   return ("Euler 1:The total is "sum)
