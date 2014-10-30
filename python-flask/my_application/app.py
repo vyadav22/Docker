@@ -23,7 +23,7 @@ def list_files():
   dirs = os.listdir(path)
   files = ""
    for file in dirs:
-    files = str(files + file + ", ")
+      files = str(files + file + ", ")
     return files
 
 @app.route("/euler1")
